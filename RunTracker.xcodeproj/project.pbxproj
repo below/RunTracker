@@ -15,6 +15,15 @@
 		CB0018BC1DEAFA9F002B414A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0018BA1DEAFA9F002B414A /* LaunchScreen.storyboard */; };
 		CB0018C71DEAFA9F002B414A /* RunTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0018C61DEAFA9F002B414A /* RunTrackerTests.swift */; };
 		CB0018D21DEAFA9F002B414A /* RunTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0018D11DEAFA9F002B414A /* RunTrackerUITests.swift */; };
+		CB0018E51DEAFB86002B414A /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0018E31DEAFB86002B414A /* Interface.storyboard */; };
+		CB0018E71DEAFB86002B414A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0018E61DEAFB86002B414A /* Assets.xcassets */; };
+		CB0018EE1DEAFB86002B414A /* RunTracker Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB0018ED1DEAFB86002B414A /* RunTracker Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CB0018F51DEAFB86002B414A /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0018F41DEAFB86002B414A /* InterfaceController.swift */; };
+		CB0018F71DEAFB86002B414A /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0018F61DEAFB86002B414A /* ExtensionDelegate.swift */; };
+		CB0018F91DEAFB86002B414A /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0018F81DEAFB86002B414A /* NotificationController.swift */; };
+		CB0018FB1DEAFB86002B414A /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB0018FA1DEAFB86002B414A /* ComplicationController.swift */; };
+		CB0018FD1DEAFB86002B414A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB0018FC1DEAFB86002B414A /* Assets.xcassets */; };
+		CB0019011DEAFB86002B414A /* RunTracker Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = CB0018E11DEAFB86002B414A /* RunTracker Watch.app */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,7 +41,46 @@
 			remoteGlobalIDString = CB0018AA1DEAFA9F002B414A;
 			remoteInfo = RunTracker;
 		};
+		CB0018EF1DEAFB86002B414A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB0018A31DEAFA9F002B414A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB0018EC1DEAFB86002B414A;
+			remoteInfo = "RunTracker Watch Extension";
+		};
+		CB0018FF1DEAFB86002B414A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB0018A31DEAFA9F002B414A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB0018E01DEAFB86002B414A;
+			remoteInfo = "RunTracker Watch";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB0019051DEAFB86002B414A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB0018EE1DEAFB86002B414A /* RunTracker Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0019091DEAFB86002B414A /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				CB0019011DEAFB86002B414A /* RunTracker Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CB0018AB1DEAFA9F002B414A /* RunTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RunTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +97,18 @@
 		CB0018CD1DEAFA9F002B414A /* RunTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0018D11DEAFA9F002B414A /* RunTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunTrackerUITests.swift; sourceTree = "<group>"; };
 		CB0018D31DEAFA9F002B414A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0018E11DEAFB86002B414A /* RunTracker Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RunTracker Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0018E41DEAFB86002B414A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		CB0018E61DEAFB86002B414A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB0018E81DEAFB86002B414A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB0018ED1DEAFB86002B414A /* RunTracker Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RunTracker Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB0018F31DEAFB86002B414A /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		CB0018F41DEAFB86002B414A /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		CB0018F61DEAFB86002B414A /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		CB0018F81DEAFB86002B414A /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		CB0018FA1DEAFB86002B414A /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		CB0018FC1DEAFB86002B414A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB0018FE1DEAFB86002B414A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +133,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB0018EA1DEAFB86002B414A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -82,6 +149,8 @@
 				CB0018AD1DEAFA9F002B414A /* RunTracker */,
 				CB0018C51DEAFA9F002B414A /* RunTrackerTests */,
 				CB0018D01DEAFA9F002B414A /* RunTrackerUITests */,
+				CB0018E21DEAFB86002B414A /* RunTracker Watch */,
+				CB0018F11DEAFB86002B414A /* RunTracker Watch Extension */,
 				CB0018AC1DEAFA9F002B414A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +161,8 @@
 				CB0018AB1DEAFA9F002B414A /* RunTracker.app */,
 				CB0018C21DEAFA9F002B414A /* RunTrackerTests.xctest */,
 				CB0018CD1DEAFA9F002B414A /* RunTrackerUITests.xctest */,
+				CB0018E11DEAFB86002B414A /* RunTracker Watch.app */,
+				CB0018ED1DEAFB86002B414A /* RunTracker Watch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,6 +199,38 @@
 			path = RunTrackerUITests;
 			sourceTree = "<group>";
 		};
+		CB0018E21DEAFB86002B414A /* RunTracker Watch */ = {
+			isa = PBXGroup;
+			children = (
+				CB0018E31DEAFB86002B414A /* Interface.storyboard */,
+				CB0018E61DEAFB86002B414A /* Assets.xcassets */,
+				CB0018E81DEAFB86002B414A /* Info.plist */,
+			);
+			path = "RunTracker Watch";
+			sourceTree = "<group>";
+		};
+		CB0018F11DEAFB86002B414A /* RunTracker Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CB0018F41DEAFB86002B414A /* InterfaceController.swift */,
+				CB0018F61DEAFB86002B414A /* ExtensionDelegate.swift */,
+				CB0018F81DEAFB86002B414A /* NotificationController.swift */,
+				CB0018FA1DEAFB86002B414A /* ComplicationController.swift */,
+				CB0018FC1DEAFB86002B414A /* Assets.xcassets */,
+				CB0018FE1DEAFB86002B414A /* Info.plist */,
+				CB0018F21DEAFB86002B414A /* Supporting Files */,
+			);
+			path = "RunTracker Watch Extension";
+			sourceTree = "<group>";
+		};
+		CB0018F21DEAFB86002B414A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CB0018F31DEAFB86002B414A /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,10 +241,12 @@
 				CB0018A71DEAFA9F002B414A /* Sources */,
 				CB0018A81DEAFA9F002B414A /* Frameworks */,
 				CB0018A91DEAFA9F002B414A /* Resources */,
+				CB0019091DEAFB86002B414A /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CB0019001DEAFB86002B414A /* PBXTargetDependency */,
 			);
 			name = RunTracker;
 			productName = RunTracker;
@@ -184,6 +289,40 @@
 			productReference = CB0018CD1DEAFA9F002B414A /* RunTrackerUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		CB0018E01DEAFB86002B414A /* RunTracker Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0019061DEAFB86002B414A /* Build configuration list for PBXNativeTarget "RunTracker Watch" */;
+			buildPhases = (
+				CB0018DF1DEAFB86002B414A /* Resources */,
+				CB0019051DEAFB86002B414A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB0018F01DEAFB86002B414A /* PBXTargetDependency */,
+			);
+			name = "RunTracker Watch";
+			productName = "RunTracker Watch";
+			productReference = CB0018E11DEAFB86002B414A /* RunTracker Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		CB0018EC1DEAFB86002B414A /* RunTracker Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB0019021DEAFB86002B414A /* Build configuration list for PBXNativeTarget "RunTracker Watch Extension" */;
+			buildPhases = (
+				CB0018E91DEAFB86002B414A /* Sources */,
+				CB0018EA1DEAFB86002B414A /* Frameworks */,
+				CB0018EB1DEAFB86002B414A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RunTracker Watch Extension";
+			productName = "RunTracker Watch Extension";
+			productReference = CB0018ED1DEAFB86002B414A /* RunTracker Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,6 +350,16 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = CB0018AA1DEAFA9F002B414A;
 					};
+					CB0018E01DEAFB86002B414A = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = M3DTZN9V9B;
+						ProvisioningStyle = Automatic;
+					};
+					CB0018EC1DEAFB86002B414A = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = M3DTZN9V9B;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = CB0018A61DEAFA9F002B414A /* Build configuration list for PBXProject "RunTracker" */;
@@ -229,6 +378,8 @@
 				CB0018AA1DEAFA9F002B414A /* RunTracker */,
 				CB0018C11DEAFA9F002B414A /* RunTrackerTests */,
 				CB0018CC1DEAFA9F002B414A /* RunTrackerUITests */,
+				CB0018E01DEAFB86002B414A /* RunTracker Watch */,
+				CB0018EC1DEAFB86002B414A /* RunTracker Watch Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -255,6 +406,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0018DF1DEAFB86002B414A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0018E71DEAFB86002B414A /* Assets.xcassets in Resources */,
+				CB0018E51DEAFB86002B414A /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB0018EB1DEAFB86002B414A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0018FD1DEAFB86002B414A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +455,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CB0018E91DEAFB86002B414A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB0018F91DEAFB86002B414A /* NotificationController.swift in Sources */,
+				CB0018FB1DEAFB86002B414A /* ComplicationController.swift in Sources */,
+				CB0018F71DEAFB86002B414A /* ExtensionDelegate.swift in Sources */,
+				CB0018F51DEAFB86002B414A /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -299,6 +478,16 @@
 			isa = PBXTargetDependency;
 			target = CB0018AA1DEAFA9F002B414A /* RunTracker */;
 			targetProxy = CB0018CE1DEAFA9F002B414A /* PBXContainerItemProxy */;
+		};
+		CB0018F01DEAFB86002B414A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB0018EC1DEAFB86002B414A /* RunTracker Watch Extension */;
+			targetProxy = CB0018EF1DEAFB86002B414A /* PBXContainerItemProxy */;
+		};
+		CB0019001DEAFB86002B414A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB0018E01DEAFB86002B414A /* RunTracker Watch */;
+			targetProxy = CB0018FF1DEAFB86002B414A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -317,6 +506,14 @@
 				CB0018BB1DEAFA9F002B414A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		CB0018E31DEAFB86002B414A /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB0018E41DEAFB86002B414A /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -497,6 +694,76 @@
 			};
 			name = Release;
 		};
+		CB0019031DEAFB86002B414A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				INFOPLIST_FILE = "RunTracker Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonbelow.RunTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		CB0019041DEAFB86002B414A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				INFOPLIST_FILE = "RunTracker Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonbelow.RunTracker.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
+		CB0019071DEAFB86002B414A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				IBSC_MODULE = RunTracker_Watch_Extension;
+				INFOPLIST_FILE = "RunTracker Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonbelow.RunTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Debug;
+		};
+		CB0019081DEAFB86002B414A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = M3DTZN9V9B;
+				IBSC_MODULE = RunTracker_Watch_Extension;
+				INFOPLIST_FILE = "RunTracker Watch/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vonbelow.RunTracker.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.1;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +797,22 @@
 			buildConfigurations = (
 				CB0018DD1DEAFA9F002B414A /* Debug */,
 				CB0018DE1DEAFA9F002B414A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB0019021DEAFB86002B414A /* Build configuration list for PBXNativeTarget "RunTracker Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0019031DEAFB86002B414A /* Debug */,
+				CB0019041DEAFB86002B414A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CB0019061DEAFB86002B414A /* Build configuration list for PBXNativeTarget "RunTracker Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB0019071DEAFB86002B414A /* Debug */,
+				CB0019081DEAFB86002B414A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
